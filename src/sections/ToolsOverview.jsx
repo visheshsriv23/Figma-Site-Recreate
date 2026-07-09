@@ -1,10 +1,22 @@
 import React from 'react';
-
-// Core structural layout asset imports
 import DesktopImg from '../assets/tools-overview/Desktop.png';
 import BlobLeft from '../assets/tools-overview/Blob Group (1).png';
 import BlobRight from '../assets/tools-overview/Blob Group.png';
 import LinesBottom from '../assets/tools-overview/Lines.png';
+import AppThumb0 from '../assets/tools-overview/App-thumbnail.png';
+import AppThumb1 from '../assets/tools-overview/App-thumbnail (1).png';
+import AppThumb2 from '../assets/tools-overview/App-thumbnail (2).png';
+import AppThumb3 from '../assets/tools-overview/App-thumbnail (3).png';
+import AppThumb4 from '../assets/tools-overview/App-thumbnail (4).png';
+import AppThumb5 from '../assets/tools-overview/App-thumbnail (5).png';
+import AppThumb6 from '../assets/tools-overview/App-thumbnail (6).png';
+import AppThumb7 from '../assets/tools-overview/App-thumbnail (7).png';
+import AppThumb8 from '../assets/tools-overview/App-thumbnail (8).png';
+
+const APP_THUMBNAILS = [
+    AppThumb0, AppThumb1, AppThumb2, AppThumb3, 
+    AppThumb4, AppThumb5, AppThumb6, AppThumb7, AppThumb8
+];
 
 export default function ToolsOverview() {
   return (
@@ -54,31 +66,19 @@ export default function ToolsOverview() {
             <span className="text-lg ml-1">▶</span>
           </button>
         </div>
-        <div className="mt-12 lg:mt-16 w-full max-w-[377px] sm:max-w-[600px] lg:max-w-[1160px] overflow-x-auto lg:overflow-visible scrollbar-none px-2 py-1">
-          <div className="flex lg:grid lg:grid-cols-9 items-center gap-[24px] lg:gap-0 justify-between min-w-max lg:min-w-full">
-            {[
-              "App-thumbnail.png",
-              "App-thumbnail (1).png",
-              "App-thumbnail (2).png",
-              "App-thumbnail (3).png",
-              "App-thumbnail (4).png",
-              "App-thumbnail (5).png",
-              "App-thumbnail (6).png",
-              "App-thumbnail (7).png",
-              "App-thumbnail (8).png"
-            ].map((filename, index) => (
-              <div 
-                key={index}
-                className="w-[64px] h-[64px] rounded-[14px] border-[3px] border-transparent hover:border-[#FB923C] transition-all duration-150 overflow-hidden cursor-pointer bg-white shadow-sm flex-shrink-0 mx-auto"
-              >
-                <img 
-                  src={`/src/assets/tools-overview/${filename}`} 
-                  alt={`App tool module integration state ${index}`} 
-                  className="w-full h-full object-cover" 
-                />
-              </div>
-            ))}
-          </div>
+        <div className="mt-12 lg:mt-16 w-full max-w-[377px] sm:max-w-[600px] lg:max-w-[1160px] grid grid-cols-9 gap-2 sm:gap-[24px] items-center justify-between">
+          {APP_THUMBNAILS.map((thumbnailAsset, index) => (
+            <div 
+              key={index} 
+              className="w-[32px] h-[32px] sm:w-[64px] sm:h-[64px] rounded-[14px] border border-transparent hover:border-[#F8923C] shadow-sm bg-white p-1 transition-all duration-200 flex items-center justify-center cursor-pointer"
+            >
+              <img 
+                src={thumbnailAsset} 
+                alt={`App tool module integration state ${index + 1}`} 
+                className="w-full h-full object-cover rounded-[10px]" 
+              />
+            </div>
+          ))}
         </div>
       </div>
     </section>

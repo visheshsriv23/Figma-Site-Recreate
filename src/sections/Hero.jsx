@@ -1,5 +1,7 @@
 import React from 'react';
 import UnderlineVector from '../assets/feature-detail/Vector 14.png';
+import CompaniesBadges from '../assets/press.png';
+import DashboardMockup from '../assets/group 50.png';
 
 export default function Hero() {
   return (
@@ -34,7 +36,7 @@ export default function Hero() {
             </div>
           <div className="pt-6">
             <img 
-              src="/src/assets/press.png" 
+              src={CompaniesBadges} 
               alt="Trusted by leading companies badges layout" 
               className="w-full max-w-[575.4px] h-auto object-contain opacity-80" 
             />
@@ -42,7 +44,7 @@ export default function Hero() {
         </div>
         <div className="w-full max-w-[624.6px] flex justify-center lg:justify-end">
           <img 
-            src="/src/assets/group 50.png" 
+            src={DashboardMockup}
             alt="Students interface dashboard visual compilation graphic" 
             className="w-full h-auto max-h-[544.53px] object-contain drop-shadow-xl" 
           />
