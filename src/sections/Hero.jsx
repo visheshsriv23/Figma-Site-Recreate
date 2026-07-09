@@ -1,7 +1,7 @@
 import React from 'react';
 import UnderlineVector from '../assets/feature-detail/Vector 14.png';
-import CompaniesBadges from '../assets/press.png';
-import DashboardMockup from '../assets/group 50.png';
+import CompaniesBadges from '../assets/Press.png';
+import DashboardMockup from '../assets/Group 50.png';
 
 export default function Hero() {
   return (
