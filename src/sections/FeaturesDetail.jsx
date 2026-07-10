@@ -10,8 +10,8 @@ import StarsBackgroundLayer from '../assets/feature-detail/Icons.png';
 export default function FeaturesDetail() {
   return (
     <section className="w-full bg-white flex justify-center overflow-hidden py-16 lg:py-[80px]">
-      <div className="w-full max-w-[1440px] px-6 sm:px-12 lg:px-[80px] flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-[40px] min-h-[639px]">
-        <div className="w-full lg:w-[45%] flex flex-col items-start text-left max-w-[740px]">
+      <div className="w-full max-w-[1440px] px-6 sm:px-12 lg:px-[80px] flex flex-col xl:flex-row items-center justify-center xl:justify-between gap-12 xl:gap-8 min-h-fit mx-auto">
+        <div className="w-full xl:w-[45%] max-w-[768px] xl:max-w-[500px] flex flex-col items-center xl:items-start text-center xl:text-left mb-10 xl:mb-0">
           <div className="relative pb-2">
             <h2 className="text-[36px] sm:text-[40px] font-black tracking-tight text-[#111827] leading-[1.15]">
               All the cool{' '}
@@ -31,7 +31,7 @@ export default function FeaturesDetail() {
             pellentesque quisque feugiat cras ullamcorper. Ultrices in amet, 
             ullamcorper non viverra a, neque orci.
           </p>
-          <div className="mt-8">
+          <div className="mt-5">
             <a 
               href="#all-features" 
               className="inline-flex items-center text-sm font-bold text-[#2563EB] hover:text-blue-700 transition-colors group gap-1"
