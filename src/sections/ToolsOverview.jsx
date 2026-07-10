@@ -39,7 +39,7 @@ export default function ToolsOverview() {
             className="absolute bottom-[130px] lg:bottom-[150px] left-1/2 -translate-x-1/2 w-[90%] lg:w-[1093px] h-auto object-contain" 
         />
         </div>
-      <div className="w-full max-w-[1440px] px-[14px] sm:px-[40px] lg:px-[80px] flex flex-col items-left text-left relative z-10">
+      <div className="w-full max-w-[1440px] px-[14px] sm:px-[40px] lg:px-[80px] flex flex-col items-left text-left sm:items-center sm:text-center relative z-10">
         <div className="flex flex-col items-center space-y-4 max-w-[800px]">
           <h2 className="text-[32px] sm:text-[42px] font-black tracking-tight text-[#111827] leading-tight z-10">
             All the{' '}
