@@ -11,21 +11,21 @@ export default function CommunityGrid() {
       <div className="w-full max-w-[1440px] px-6 sm:px-12 lg:px-[80px] flex flex-col lg:flex-row items-center gap-12 lg:gap-[80px]">
         <div className="w-full lg:w-1/2 flex flex-col justify-center items-start text-left max-w-[540px] order-1 lg:order-2">  
             <div className="w-full">
-                <h2 className="text-[32px] sm:text-[40px] font-black tracking-tight text-[#111827] leading-[1.15]">
+                <h2 className="text-[32px] sm:text-[40px] font-black tracking-tight text-[#0F172A] leading-[1.15]">
                 Meet{' '}
                 <span className="relative inline-block">
                     international
                     <img 
                     src={AeroplaneIcon} 
                     alt="" 
-                    className="absolute -top-[40px] lg:-top-[52px] right-[-12px] w-[44px] lg:w-[64px] h-[44px] lg:h-[64px] pointer-events-none object-contain"
+                    className="absolute -top-[40px] lg:-top-[52px] right-[5px] w-[40px] lg:w-[55px] h-[44px] lg:h-[64px] pointer-events-none object-contain"
                     />
                 </span>{' '}
                 <br />
                 students & teachers
                 </h2>
             </div>
-            <p className="mt-6 text-sm sm:text-base text-gray-500 font-medium leading-relaxed">
+            <p className="mt-6 text-sm sm:text-base text-[#0F172A] font-medium leading-relaxed">
                 Morbi sit egestas dignissim pharetra, sed amet. Tempus justo 
                 senectus risus ac vel, velit, nunc. Eget commodo eget in aliquam 
                 facilisi facilisi nec magna hendrerit. Placerat ipsum sit tellus urna, 

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import LogoColored from '../assets/Logo-colored.png'
+import down from '../assets/chevron-down.png'
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,12 +16,12 @@ export default function Navbar() {
                 className="h-[32px] w-auto object-contain select-none" 
             />
             </div>
-          <div className="hidden md:flex items-center w-full max-w-[515px] h-[48px] justify-between text-sm font-medium text-gray-500">
+          <div className="hidden md:flex items-center w-full max-w-[515px] h-[48px] justify-between text-sm font-medium text-[#0F172A]">
             <a href="#products" className="w-[85px] pt-[12px] pb-[12px] pr-[8px] pl-[8px] text-center hover:text-[#111827] transition-colors">Products</a>
             <a href="#solutions" className="w-[85px] pt-[12px] pb-[12px] pr-[8px] pl-[8px] text-center hover:text-[#111827] transition-colors">Solutions</a>
             <a href="#pricing" className="w-[85px] pt-[12px] pb-[12px] pr-[8px] pl-[8px] text-center hover:text-[#111827] transition-colors">Pricing</a>
             <a href="#resources" className="w-[85px] pt-[12px] pb-[12px] pr-[8px] pl-[8px] text-center hover:text-[#111827] transition-colors flex items-center justify-center gap-1">
-              Resources <span className="text-[10px] opacity-70">▼</span>
+              Resources <img src={down} alt='down' className="w-4 h-4 opacity-70 inline-block align-middle ml-1"/>
             </a>
           </div>
         </div>
@@ -28,12 +29,12 @@ export default function Navbar() {
           <button className="text-sm font-medium text-gray-600 hover:text-[#111827] transition-colors">
             Log In
           </button>
-          <button className="border-2 border-[#111827] text-sm font-bold px-5 py-2.5 rounded-md hover:bg-[#111827] hover:text-white transition-all duration-200">
+          <button className="border-2 border-[#111827] text-sm font-bold px-5 py-2.5 text-[#0F172A] rounded-md hover:bg-[#111827] hover:text-white transition-all duration-200">
             Sign Up Now
           </button>
         </div>
         <div className="md:hidden flex items-center">
-          <button onClick={() => setIsOpen(!isOpen)} className="text-gray-600 hover:text-[#111827] text-2xl">
+          <button onClick={() => setIsOpen(!isOpen)} className="text-gray-600  hover:text-[#111827] text-2xl">
             {isOpen ? '✕' : '☰'}
           </button>
         </div>

@@ -14,7 +14,7 @@ export default function Metrics() {
           <h3 className="mt-4 text-[40px] lg:text-[48px] font-black text-[#FACC15] tracking-tight leading-none">
             195
           </h3>
-          <p className="mt-2 text-sm sm:text-base font-bold text-[#94A3B8] uppercase tracking-wider">
+          <p className="mt-2 text-sm sm:text-base font-bold text-[#FACC15] uppercase tracking-wider">
             user countries
           </p>
         </div>
@@ -25,7 +25,7 @@ export default function Metrics() {
           <h3 className="mt-4 text-[40px] lg:text-[48px] font-black text-[#FACC15] tracking-tight leading-none">
             1M
           </h3>
-          <p className="mt-2 text-sm sm:text-base font-bold text-[#94A3B8] uppercase tracking-wider">
+          <p className="mt-2 text-sm sm:text-base font-bold text-[#FACC15] uppercase tracking-wider">
             valued teachers
           </p>
         </div>
@@ -36,7 +36,7 @@ export default function Metrics() {
           <h3 className="mt-4 text-[40px] lg:text-[48px] font-black text-[#FACC15] tracking-tight leading-none">
             17M
           </h3>
-          <p className="mt-2 text-sm sm:text-base font-bold text-[#94A3B8] uppercase tracking-wider">
+          <p className="mt-2 text-sm sm:text-base font-bold text-[#FACC15] uppercase tracking-wider">
             happy students
           </p>
         </div>

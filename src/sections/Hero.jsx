@@ -2,20 +2,21 @@ import React from 'react';
 import UnderlineVector from '../assets/feature-detail/Vector 14.png';
 import CompaniesBadges from '../assets/Press.png';
 import DashboardMockup from '../assets/Group 50.png';
+import play from '../assets/play-circle.png';
 
 export default function Hero() {
   return (
-    <section className="w-full bg-[#F9FAFB] flex justify-center overflow-hidden">
+    <section className="w-full bg-[#ffffff] flex justify-center overflow-hidden">
       <div className="w-full max-w-[1440px] min-h-[704.53px] px-6 sm:px-[80px] grid grid-cols-1 lg:grid-cols-2 gap-[80px] items-center py-12 lg:py-0">
         <div className="w-full max-w-[575.4px] flex flex-col justify-center space-y-8">
           <div className="flex flex-col space-y-4">
           <h1 className="text-[36px] sm:text-[48px] lg:text-[56px] font-black tracking-tight text-[#111827] leading-[1.15] text-left">
-            <span className="relative inline-block mr-2">
+            <span className="relative inline-block mr-2 z-40">
                 Teach
                 <img 
                 src={UnderlineVector} 
                 alt="" 
-                className="absolute -bottom-[2px] left-0 w-[110px] sm:w-[190.5px] max-w-none h-auto object-contain pointer-events-none select-none"
+                className="absolute -bottom-[2px] left-0 w-[100px] sm:w-[160px] max-w-none h-auto object-contain pointer-events-none select-none -z-10"
                 />
             </span> 
             students <br /> worldwide
@@ -26,11 +27,11 @@ export default function Hero() {
             </p>
           </div>
           <div className="flex flex-row items-center justify-start gap-4 mt-6 w-full">
-            <button className="px-5 py-3.5 sm:w-[239px] sm:h-[64px] bg-[#EA580C] text-white font-bold text-sm sm:text-base rounded-[8px] hover:bg-orange-700 transition-colors whitespace-nowrap">
+            <button className="px-5 py-3.5 sm:w-[200px] sm:h-[64px] bg-[#EA580C] text-white font-bold text-sm sm:text-base rounded-[8px] hover:bg-orange-700 transition-colors whitespace-nowrap">
                 Sign Up Now
             </button>
             <button className="flex items-center justify-center gap-2 px-3 py-3.5 sm:w-[178px] sm:h-[56px] text-[#2563EB] font-bold text-sm sm:text-base whitespace-nowrap">
-                <span className="w-5 h-5 flex items-center justify-center rounded-full border border-[#2563EB] text-[10px]">▶</span>
+                <img src={play} alt="" className='w-6 h-6 object-contain'/>
                 View Demo
             </button>
             </div>
