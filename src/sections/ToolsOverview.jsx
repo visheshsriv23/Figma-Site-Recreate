@@ -65,11 +65,11 @@ export default function ToolsOverview() {
             className="w-full h-full object-cover"
           />
         </div>
-        <div className="mt-1.5 lg:mt-16 w-full max-w-[360px] sm:max-w-[1160px] flex sm:grid sm:grid-cols-9 gap-3 sm:gap-[24px] overflow-x-auto sm:overflow-x-visible snap-x snap-mandatory scrollbar-none px-4 sm:px-0 py-2">
+        <div className="mt-1.5 lg:mt-10 w-full max-w-[360px] sm:max-w-[1160px] flex sm:grid sm:grid-cols-9 gap-3 sm:gap-[24px] overflow-x-auto sm:overflow-x-visible snap-x snap-mandatory scrollbar-none px-4 sm:px-0 py-2">
           {APP_THUMBNAILS.map((thumbnailAsset, index) => (
             <div 
               key={index} 
-              className="w-[20%] min-w-[62px] sm:w-[64px] h-[62px] sm:h-[64px] flex-shrink-0 snap-center rounded-[14px] border border-[#E5E7EB] hover:border-[#F8923C] shadow-[0px_4px_10px_rgba(0,0,0,0.03)] bg-white p-2 sm:p-2.5 transition-all duration-200 flex items-center justify-center cursor-pointer select-none"
+              className="w-[20%] min-w-[62px] sm:w-[80px] h-[80px] sm:h-[64px] flex-shrink-0 snap-center rounded-[14px] border border-[#E5E7EB] hover:border-[#F8923C] shadow-[0px_4px_10px_rgba(0,0,0,0.03)] bg-white p-2 sm:p-1 transition-all duration-200 flex items-center justify-center cursor-pointer select-none"
             >
               <img 
                 src={thumbnailAsset} 
